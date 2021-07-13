@@ -183,30 +183,6 @@
 		},
 		{
 			"categories": [
-				"Other",
-				"Tools"
-			],
-			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
-			"image": "vaultwarden/server:latest",
-			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
-			"name": "vaultwarden",
-			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
-			"platform": "linux",
-			"ports": [
-				":80/tcp"
-			],
-			"restart_policy": "unless-stopped",
-			"title": "Vaultwarden",
-			"type": 1,
-			"volumes": [
-				{
-					"bind": "/srv/dev-disk-by-uuid-183c1947-6fae-48c6-bf5c-f49e3a56dd9d/appdata/Vaultwarden",
-					"container": "/config"
-				}
-			]
-		},
-		{
-			"categories": [
 				"Books",
 				"Other"
 			],
@@ -3365,6 +3341,30 @@
 			"volumes": [
 				{
 					"bind": "/srv/dev-disk-by-uuid-183c1947-6fae-48c6-bf5c-f49e3a56dd9d/appdata/Config/Unifi",
+					"container": "/config"
+				}
+			]
+		},
+		{
+			"categories": [
+				"Other",
+				"Tools"
+			],
+			"description": "This is a Bitwarden server API implementation written in Rust compatible with upstream Bitwarden clients*, perfect for self-hosted deployment where running the official resource-heavy service might not be ideal..",
+			"image": "vaultwarden/server:latest",
+			"logo": "https://raw.githubusercontent.com/SelfhostedPro/selfhosted_templates/master/Images/bitwarden.png",
+			"name": "vaultwarden",
+			"note": "This project is not associated with the Bitwarden project nor 8bit Solutions LLC.",
+			"platform": "linux",
+			"ports": [
+				":80/tcp"
+			],
+			"restart_policy": "unless-stopped",
+			"title": "Vaultwarden",
+			"type": 1,
+			"volumes": [
+				{
+					"bind": "/srv/dev-disk-by-uuid-183c1947-6fae-48c6-bf5c-f49e3a56dd9d/appdata/Vaultwarden",
 					"container": "/config"
 				}
 			]
